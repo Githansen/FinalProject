@@ -1,0 +1,17 @@
+button {
+	
+	
+	border-radius: 44px;
+	font-size: 25px;
+	width: 150px;
+	margin-left: 20%;
+	margin-top: 20px;
+	padding: 1%;
+	height: 100%;
+	color: black;
+	background-color: silver;
+	outline: none;
+}
+.buttonholder {
+	width: 100%;
+}
