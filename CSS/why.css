@@ -134,4 +134,13 @@
 	.headline h1 {
 		font-size: 38px;
 	}
+	.factbox {
+		height: 1900px;
+	}
+	.tips {
+		margin-top: 1800px;
+	}
+	.factimage {
+		margin-top: -800px;
+	}
 }
