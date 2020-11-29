@@ -1,139 +1,90 @@
+.grid-container{
+	display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;	
+}
 .factbox {
 	display: grid; 
+	grid-column: 1;
+	grid-row: auto;
 	background-color: white;
-	width: 70%;
-	margin-left: 15%;
-	height: 800px;
+	width: 80%;
+	margin-left: 10%;
+	height: auto;
 	border-radius: 44px;
 	margin-bottom: 20px;
-	border-style: inset;
-	border-color: black;
+	border-style: ridge;
+	border-color: silver;
 }
-.spacebetween {
-	width: 100%;
+.factbox img {
+	position:relative;
 	height: 100px;
-} 
-.factheadline {
-	width: 120px;  
-	height: 90px;
-}
-.factheadline img {
-	position: absolute;
-	width: 150px; 
-	height: 120px;
-}
-.headline {
-	display: flex;
-	position: absolute;
-	z-index: 4;
-	margin-left: 120px;
-	width: calc(70% - 120px);
-	font-size: 50px;
-	text-align: center;
-	font-family: "Lucida Console", Courier, monospace;
-}
-.headline h1 {
-	font-family: Helvetica;
-	margin-left: 25%;
-	margin-bottom: 2px;
-	font-size: 48px;
+	width: 160px;
+	margin: 5px;
+	
 }
 
-.facttext {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	width: 65%;
-	margin-left: 15%;
+.factbox h1 {
 	font-size: 40px;
-	height: 370px;
-	margin-top: -350px;
-	
+	width: 100%;
 	
 }
-.facttext ul {
+.imageholder {
 	position: relative;
+	width: 20%;
+	height: auto;
 	
 }
-.tips {
-	background-color: lightgreen;
-	position: absolute;
-	font-family: Helvetica, Sans-Serif;
-	height: 50px;
+.headerholder {
+	position: relative;
+	margin-left: 20%;
+	margin-top: -110px;
+	width: 80%;
+	height: auto;
 	
-	width: 50%;
-	margin-top: 750px;
-	text-align: center;
-	border-radius: 44px;
+	
 }
-.tips h2 {
-	margin-bottom: 15px;
+.factbox li {
+	font-size: 30px;
+	margin-left: 10%;
+	width: 90%;
+	
 }
-
-@media only screen and (max-width: 1240px) {
+.emptyspace {
+	width: 100%;
+	height: 150px;
+}
+@media only screen and (max-width: 1100px){
 	.factbox {
-		margin-left: 0; 
-		width: 100%;
-		height: 1300px;
+		margin-left: 0;
+		width: 95vw;
 	}
-	.headline {
-		width: calc(100% - 120px);
+	.factbox h1 {
+		font-size: 35px;
 		
 	}
-	.facttext {
+	.headerholder {
+		margin-left: 200px;
+		width: 65%;
+	}
+	
+}
+@media only screen and (max-width: 830px) {
+	.headerholder {
 		width: 80%;
-		margin-top: -680px;
-		margin-left: 10%;
-		
-	}
-	
-	.tips {
-		margin-top: 1230px;
-		height: 70px;
-		width: 100%;
+		margin-left: 22%;
 	}
 }
-@media only screen and (max-width: 1240px) {
-	.factbox{
-		height: 1400px;
-	}
-	.tips{
-		margin-top: 1330px;
-	}
-	.factheadline img {
-		height: 180px;
-		width: 200px;
-	}
-	.headline h1 {
-		font-size: 50px;
-		
+@media only screen and (max-width: 800px) {
+	.headerholder  {
+		margin-left: 35%;
+		width: 65%;
 	}
 }
-@media only screen and (max-width: 550px){
-	.factbox {
-		height: 1605px;
-	}
-	.tips {
-		margin-top: 1505px;
-		height: 100px;
-	}
-	.factheadline img {
-		height: 150px;
-		width: 170px;
-	}
-	
-}
-@media only screen and (max-width: 420px) {
-	.headline h1 {
-		font-size: 38px;
-	}
-	.factbox {
-		height: 1900px;
-	}
-	.tips {
-		margin-top: 1800px;
-	}
-	.factimage {
-		margin-top: -800px;
+@media only screen and (max-width: 450px) {
+	.headerholder  {
+		margin-top: 10px;
+		width: 80%;
+		margin-left: 25px;
 	}
 }
