@@ -13,14 +13,12 @@ body {
 #frontPageFirst {
     grid-column: 1;
     grid-row: 2;
-
+color: white;
     height: calc(100vh - 100px);
     min-height: 750px;
-
-
+	
     display: flex;
-
-    background-color: #5d974c;
+    background-color:  #24652f;;
 }
 
 

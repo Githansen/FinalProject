@@ -7,6 +7,17 @@ grid-template-rows: auto;
 	text-align: center;
 	font-size: 50px;
 }
+
+body {
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto auto 100px;
+
+    background-color: #EFF0EC;
+
+}
+
 .factbox {
 	display: grid; 
 	grid-column: 1;
@@ -92,4 +103,157 @@ grid-template-rows: auto;
 		width: 80%;
 		margin-left: 25px;
 	}
+}
+
+body {
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto auto 100px;
+
+    background-color: #EFF0EC;
+
+}
+
+/*region First Section*/
+#frontPageFirst {
+    grid-column: 1;
+    grid-row: 2;
+color: white;
+    height: calc(100vh - 100px);
+    min-height: 750px;
+	
+    display: flex;
+    background-color:  #24652f;;
+}
+
+
+#appQuote {
+    display: flex;
+    height: 100%;
+    width: 35%;
+
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+#appQuote > p {
+    width: 100%;
+    font-weight: bolder;
+	margin-left: 5%;
+    font-size: 50px;
+    text-align: right;
+    margin-bottom: 200px;
+}
+
+#appImgFirst {
+    display: flex;
+    height: 100%;
+    width: 30%;
+	margin-left: 20%;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#appImgFirst > img {
+    max-height: 753px;
+    height: 90%;
+    width: auto;
+	
+}
+
+@media only screen and (max-width: 1500px) {
+    #appImgFirst > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*endregion*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1060px) {
+    #frontPageFirst {
+        flex-direction: column;
+        height: auto;
+    }
+
+  
+
+    #appQuote {
+        width: 95%;
+        height: 400px;
+		margin-right: 5%;
+    }
+
+    #appImgFirst {
+        width: 100%;
+        height: calc(100vh);
+        min-height: 700px;
+        margin: 0;
+    }
+
+    #appImgFirst > img {
+        max-width: 563px;
+        width: 80%;
+        height: auto;
+        min-height: 0;
+    }
+
+ 
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #frontPageFirst {
+        margin-bottom: 50px;
+    }
+
+    #appQuote > p {
+        width: 95%;
+        font-size: 45px;
+		
+    }
+
+    #missonStatement > p {
+        font-size: 45px;
+        width: 95%;
+    }
+
+    #appImgFirst {
+        width: 100%;
+        height: auto;
+    }
+
+    #appImgFirst > img {
+        min-width: 0;
+        min-height: 0;
+		
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 319px) {
+    #frontPageFirst > *, #frontPageSecond #frontPageThird {
+        word-break: break-all;
+    }
 }
