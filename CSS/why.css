@@ -27,7 +27,7 @@ body {
 	margin-left: 10%;
 	height: auto;
 	margin-bottom: 20px;
-	border-style: ridge;
+	border-style: solid;
 	border-color: silver;
 }
 .factbox img {
@@ -73,7 +73,7 @@ body {
 @media only screen and (max-width: 1100px){
 	.factbox {
 		margin-left: 0;
-		width: calc(100vw - 23px);
+		width: 96vw;
 		
 	}
 	.factbox h2 {
