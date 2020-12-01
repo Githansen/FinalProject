@@ -49,6 +49,7 @@ body {
 	width: 20%;
 	height: auto;
 	
+	
 }
 .headerholder {
 	position: relative;
@@ -62,7 +63,7 @@ body {
 .factbox li {
 	font-size: 30px;
 	margin-left: 10%;
-	width: 90%;
+	width: 85%;
 	
 }
 .emptyspace {
@@ -72,12 +73,14 @@ body {
 @media only screen and (max-width: 1100px){
 	.factbox {
 		margin-left: 0;
-		width: 95vw;
+		width: calc(100vw - 23px);
+		
 	}
 	.factbox h2 {
 		font-size: 35px;
 		
 	}
+	
 	.headerholder {
 		margin-left: 200px;
 		width: 65%;
@@ -87,7 +90,7 @@ body {
 @media only screen and (max-width: 830px) {
 	.headerholder {
 		width: 80%;
-		margin-left: 22%;
+		margin-left: 20%;
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -96,11 +99,15 @@ body {
 		width: 65%;
 	}
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 530px) {
 	.headerholder  {
 		margin-top: 10px;
 		width: 80%;
-		margin-left: 25px;
+		margin-left: 100px;
+		
+	}
+	.factbox li {
+		margin-left: 0;
 	}
 }
 
@@ -188,7 +195,7 @@ color: white;
 
 
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1200px) {
     #frontPageFirst {
         flex-direction: column;
         height: auto;
@@ -254,8 +261,3 @@ color: white;
 
 }
 
-@media only screen and (max-width: 319px) {
-    #frontPageFirst > *, #frontPageSecond #frontPageThird {
-        word-break: break-all;
-    }
-}
